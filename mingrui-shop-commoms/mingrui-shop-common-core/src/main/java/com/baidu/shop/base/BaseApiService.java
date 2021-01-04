@@ -2,7 +2,6 @@ package com.baidu.shop.base;
 
 import com.baidu.shop.status.HTTPStatus;
 import com.baidu.shop.utils.JSONUtil;
-import jdk.internal.instrumentation.Logger;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
