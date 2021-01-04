@@ -82,9 +82,7 @@ public class CategoryServiceImpl extends BaseApiService implements CategoryServi
         Example example1 = new Example(CategoryBrandEntity.class);
         example1.createCriteria().andEqualTo("categoryId",id);
         List<CategoryBrandEntity> categoryBrandEntities = categoryBrandMapper.selectByExample(example1);
-        if(categoryBrandEntities.size() != 0){
-            return this.setResultError("当前节点不能删除");
-        }
+        if(categoryBrandEntities.size() != 0) return this.setResultError("当前节点不能删除");
 
         Example example = new Example(CategoryEntity.class);
         example.createCriteria().andEqualTo("parentId",categoryEntity.getParentId());
