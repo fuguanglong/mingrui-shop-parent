@@ -9,16 +9,19 @@ import javax.persistence.Table;
  * @ClassName TestSpringBootApplication
  * @Description: TODO
  * @Author fuguanglong
- * @Date 2021/1/4
+ * @Date 2021/1/6
  * @Version V1.0
  **/
 @Data
-@Table(name = "tb_spec_group")
-public class SpecificationEntity {
+@Table(name = "tb_stock")
+public class StockEntity {
+
     @Id
-    private Integer id;
+    private Long skuId;
 
-    private Integer cid;
+    private Integer seckillStock;
 
-    private String name;
+    private Integer seckillTotal;
+
+    private Integer stock;
 }
